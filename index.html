@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Sheet-Cheat Github</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Pesquisar Comandos Git</h1>
+        <label for="comando">Digite o nome do comando Git para saber sua funcionalidade:</label>
+        <input class="resposta" type="text" id="comando" placeholder="Por exemplo, git add">
+        <button onclick="pesquisarComando()">Pesquisar</button>
+        <div id="resultado"></div>
+    </div>
+    <section class="palavrasChave">
+        <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
+            <a class="navbar-brand" href="#">Pesquise por nossa lista</a>
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading1">git add</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading2">git commit</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Mais opções</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#scrollspyHeading3">git status</a></li>
+                  <li><a class="dropdown-item" href="#scrollspyHeading4">git push</a></li>
+                  <li><a class="dropdown-item" href="#scrollspyHeading5">git restore</a></li>
+                  <li><a class="dropdown-item" href="#scrollspyHeading6">git log</a></li>
+                  <li><a class="dropdown-item" href="#scrollspyHeading7">git log oneline</a></li>
+                  <li><a class="dropdown-item" href="#scrollspyHeading8">git clone</a></li>
+                  <li><a class="dropdown-item" href="#scrollspyHeading9">git branch</a></li>
+                  <li><a class="dropdown-item" href="#scrollspyHeading10">git checkout</a></li>
+                  <li><a class="dropdown-item" href="#scrollspyHeading11">git switch</a></li>
+                  <li><a class="dropdown-item" href="#scrollspyHeading12">git merge</a></li>
+                  <li><a class="dropdown-item" href="#scrollspyHeading13">git fetch</a></li>
+                  <li><a class="dropdown-item" href="#scrollspyHeading14">git diff</a></li>
+                  <li><a class="dropdown-item" href="#scrollspyHeading15">git reset</a></li>
+                  <li><a class="dropdown-item" href="#scrollspyHeading16">git remote</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+            <h4 id="scrollspyHeading1">Git add .</h4>
+            <p>Para adicionar todas as modificações realizadas de uma só vez</p>
+            <h4 id="scrollspyHeading2">Git commit</h4>
+            <p>git commit -m “mensagem do commit” : usado quando queremos capturar e salvar o estado atual do repositório</p>
+            <h4 id="scrollspyHeading3">Git status</h4>
+            <p>git status: serve para listar todos os arquivos que foram modificados</p>
+            <h4 id="scrollspyHeading4">Git push</h4>
+            <p>Utilizado para envio das alterações gravadas no diretório local para o repositório remoto. É utilizado para atualizar o repositório remoto com os commits feitos no repositório loca</p>
+            <h4 id="scrollspyHeading5">Git restore</h4>
+            <p>Trabalha com a restauração de arquivos e do projeto, voltando para um estado anterior através</p>
+            <h4 id="scrollspyHeading6">Git log</h4>
+            <p>Exibe o histórico de commits do repositório. Mostra informações como o autor do commit, data, hora e mensagem associada a cada commit</p>
+            <h4 id="scrollspyHeading7">Git log oneline</h4>
+            <p>Git log --oneline : mostra o log de forma resumida, em apenas uma linha</p>
+            <h4 id="scrollspyHeading8">Git clone</h4>
+            <p>Clona um repositório para o seu ambiente local. É utilizado para obter uma cópia completa do repositório, incluindo todos os arquivos e histórico de commits. É utilizado quando você deseja obter uma cópia completa de um repositório remoto para começar um novo projeto ou colaborar com um projeto existente</p>
+            <h4 id="scrollspyHeading9">Git branch</h4>
+            <p>Cria, lista ou exclui branches. Um branch é uma ramificação do histórico de commits, permitindo trabalhar em paralelo em diferentes versões do projeto</p>
+            <h4 id="scrollspyHeading10">Git checkout</h4>
+            <p>Altera o branch atual ou restaura arquivos. É utilizado para alternar entre branches existentes ou restaurar arquivos para uma versão anterior. Atenção: é um comando que tem mais de uma função, se você quiser apenas trocar de branch sem alterar modificações, você pode utilizar o git switch</p>
+            <h4 id="scrollspyHeading11">Git switch</h4>
+            <p>Git switch “nome_da_branch”: troca de uma branch para outra sem realizar alterações de estado. Observação: comando ainda em fase de experimentação</p>
+            <h4 id="scrollspyHeading12">Git merge</h4>
+            <p>Mescla alterações de um branch para outro. É utilizado para combinar as alterações feitas em um branch com outro, integrando as modificações</p>
+            <h4 id="scrollspyHeading13">Git fetch</h4>
+            <p>Busca as alterações do repositório remoto, mas não as mescla com o branch atual. É para obter informações mais recentes do repositório e verificar se há mudanças. Diferente do git pull , que já copia as alterações do repositório remoto</p>
+            <h4 id="scrollspyHeading14">Git diff</h4>
+            <p>Mostra as diferenças entre arquivos ou commits</p>
+            <h4 id="scrollspyHeading15">Git reset</h4>
+            <p>Desfaz commits ou altera o estado do repositório</p>
+            <h4 id="scrollspyHeading16">Git remote</h4>
+            <p>Gerencia repositórios remotos</p>
+          </div>
+    </section>
+    <script src="./assets/cheatSheetGit.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+</body>
+</html>
